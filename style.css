@@ -1,70 +1,104 @@
+/*
+====================================
+  ROOT VARIABLES & GLOBAL STYLES
+====================================
+*/
+:root {
+    --bg-color: #FDFBF8; /* A very light, warm off-white */
+    --card-bg: #FFFFFF;
+    --primary-brown: #6D4C41; /* A rich, deep brown for titles */
+    --secondary-brown: #A1887F; /* A softer brown for subtext */
+    --text-color: #4E342E; /* Main text color */
+    --shadow-color: rgba(109, 76, 65, 0.1);
+}
 
-        body {
-            background-color: #FDFBF8;
-            color: #3A2718;
-            font-family: 'Inter', sans-serif;
-        }
-        h1, h2, h3 {
-            font-family: 'Poppins', sans-serif;
-        }
-        .text-accent { color: #A66336; }
-        .bg-accent { background-color: #A66336; }
-        .bg-surface { background-color: #F7F2EB; }
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-align: center;
-            font-weight: 600;
-            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        }
-        .btn-primary {
-            background-color: #A66336;
-            color: #FDFBF8;
-        }
-        .btn-secondary {
-            border: 2px solid #A66336;
-            color: #A66336;
-        }
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 20px rgba(166, 99, 54, 0.3);
-        }
-        .section-hidden {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        .section-visible {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .project-card:hover .project-overlay {
-            opacity: 1;
-        }
-        .social-icon {
-            transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
-        }
-        .social-icon:hover {
-            transform: scale(1.1);
-            color: #A66336;
-        }
-        .placeholder-image {
-            background-image: linear-gradient(135deg, #A66336 0%, #E6AE87 100%);
-            transition: transform 0.3s ease-in-out;
-        }
-        .project-card:hover .placeholder-image {
-            transform: scale(1.05);
-        }
-        .header-container {
-            height: 64px;
-        }
-        .w-6.h-6 {
-            width: 24px;
-            height: 24px;
-            border-radius: 12px;
-        }
-        @keyframes fade-in-up {
+body {
+    background-color: #FDFBF8;
+    color: #3A2718;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-accent { color: #A66336; }
+.bg-accent { background-color: #A66336; }
+.bg-surface { background-color: #F7F2EB; }
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #A66336;
+    color: #FDFBF8;
+}
+
+.btn-secondary {
+    border: 2px solid #A66336;
+    color: #A66336;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(166, 99, 54, 0.3);
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.social-icon {
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    color: #A66336;
+}
+
+.placeholder-image {
+    background-image: linear-gradient(135deg, #A66336 0%, #E6AE87 100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .placeholder-image {
+    transform: scale(1.05);
+}
+
+.header-container {
+    height: 64px;
+}
+
+.w-6.h-6 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+/*
+====================================
+  ANIMATIONS
+====================================
+*/
+@keyframes fade-in-up {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -126,16 +160,16 @@
     /* Classic black and gray gradient */
     background: linear-gradient(90deg, #2d3748, #a0aec0, #2d3748);
     background-size: 200% 200%;
-    
+
     /* This makes the gradient apply to the text color */
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
-    
+
     /* This ensures your name stays on one line */
     white-space: nowrap;
-    
+
     /* This animates the gradient */
     animation: gradient-pan 4s ease-in-out infinite;
 }
@@ -155,20 +189,6 @@
         max-height: 500px;
     }
 }
-        /*
-====================================
-  ROOT VARIABLES & GLOBAL STYLES
-====================================
-*/
-:root {
-    --bg-color: #FDFBF8; /* A very light, warm off-white */
-    --card-bg: #FFFFFF;
-    --primary-brown: #6D4C41; /* A rich, deep brown for titles */
-    --secondary-brown: #A1887F; /* A softer brown for subtext */
-    --text-color: #4E342E; /* Main text color */
-    --shadow-color: rgba(109, 76, 65, 0.1);
-}
-
 
 /*
 ====================================
@@ -214,8 +234,6 @@
     margin-top: 20px;
 }
 
-  
-     
 /*
 ====================================
   CERTIFICATE CARD STYLING
@@ -356,9 +374,11 @@
         padding: 60px 0;
     }
 }
+
 @media (max-width: 380px) {
-  #hero-name {
-    font-size: 1.5rem !important; /* This is 24px */
-    line-height: 1.25 !important;
-  }
+    #hero-name {
+        font-size: 1.5rem !important; /* This is 24px */
+        line-height: 1.25 !important;
+    }
 }
+
