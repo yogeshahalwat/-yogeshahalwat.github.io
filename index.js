@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Safely add listeners for all buttons that open/close the modal
     safeAddEventListener('open-contact-modal', 'click', openModal);
     safeAddEventListener('hero-contact-button', 'click', openModal);
-    safeAddEventListener('close-contact-modal', 'click', closeModal); // This will now only work if the ID is correct
+    safeAddEventListener('close-contact-modal', 'click', closeModal);
     safeAddEventListener('open-contact-modal-mobile', 'click', (e) => {
         e.preventDefault();
         document.getElementById('mobile-menu')?.classList.add('hidden');
@@ -113,10 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 // Add hero-avatar class to the hero image after DOM loads
-    document.addEventListener('DOMContentLoaded', function() {
-        var heroImg = document.querySelector('#home img');
-        if (heroImg) {
-            heroImg.classList.add('hero-avatar');
-        }
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    var heroImg = document.querySelector('#home img');
+    if (heroImg) {
+        heroImg.classList.add('hero-avatar');
+    }
+});
+
