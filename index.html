@@ -19,7 +19,7 @@
     <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-opacity-80 backdrop-blur-md transition-all duration-300 text-gray-800">
         <nav class="container mx-auto px-6 py-2 flex justify-between items-center header-container">
             <a href="#home" class="text-xl font-bold text-gray-800">Yogesh Kumar</a>
-            
+
             <div class="hidden md:flex space-x-4 items-center">
                 <a href="#home" class="text-gray-600 hover:text-accent transition-colors">Home</a>
                 <a href="#about" class="text-gray-600 hover:text-accent transition-colors">About</a>
@@ -32,9 +32,12 @@
                     <a href="https://www.linkedin.com/in/yogeshkumar0/" target="_blank" class="text-gray-600 hover:text-accent social-icon">
                        <img src="Assets/logos/linkedin.jpg" alt="LinkedIn" class="w-6 h-6">
                     </a>
+                    <a href="https://www.blogger.com/profile/17903910830324355341" target="_blank" class="text-gray-600 hover:text-accent social-icon" title="Blogger">
+                        <i class="fab fa-blogger text-2xl"></i>
+                    </a>
                 </div>
             </div>
-            
+
             <button id="mobile-menu-button" class="md:hidden text-gray-800">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
@@ -52,6 +55,9 @@
                 <a href="https://www.linkedin.com/in/yogeshkumar0/" target="_blank" class="social-icon">
                    <img src="Assets/logos/linkedin.jpg" alt="LinkedIn" class="w-6 h-6">
                 </a>
+                <a href="https://www.blogger.com/profile/17903910830324355341" target="_blank" class="text-gray-600 hover:text-accent social-icon" title="Blogger">
+                    <i class="fab fa-blogger text-2xl"></i>
+                </a>
             </div>
         </div>
     </header>
@@ -60,13 +66,13 @@
           <!-- Hero Section -->
        <section id="home" class="relative min-h-screen flex items-center justify-center bg-white overflow-hidden py-20 px-4">
     <div class="container mx-auto flex flex-col md:flex-row gap-12 items-center">
-        
+
         <div class="flex-shrink-0 flex justify-center md:justify-start animate-fade-in" style="animation-delay: 0.4s;">
             <img src="Assets/images/m.jpeg" alt="Animated Portrait" class="w-full max-w-sm object-cover rounded-2xl shadow-xl ring-4 ring-stone-200/70 transition-transform duration-300 ease-in-out transform hover:scale-105">
         </div>
 
         <div class="w-full md:w-auto text-center md:text-left animate-fade-in-up md:ml-8 flex flex-col justify-center">
-            
+
             <div class="flex items-center justify-center md:justify-start mb-2">
                 <span class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-800 leading-tight mr-2" style="font-family: 'Poppins', 'Inter', sans-serif;">
                     Hi
@@ -82,11 +88,11 @@
                    Yogesh Kumar
                 </span>
             </h1>
-            
+
             <p class="text-lg md:text-xl text-stone-600 font-medium mt-6 mb-10 animate-fade-in-up" style="animation-delay: 0.3s;">
                 Backend Developer
             </p>
-            
+
             <div class="flex justify-center md:justify-start gap-4 animate-fade-in-up" style="animation-delay: 0.5s;">
                 <a href="#contact" class="px-8 py-3 font-semibold rounded-lg bg-stone-800 text-white transition-all duration-300 ease-in-out hover:bg-stone-700 hover:-translate-y-1 shadow-md">
                     Hire / Interview me
@@ -117,7 +123,7 @@
                     </div>
 
                     <div class="bg-surface p-8 rounded-lg shadow-md mb-8">
-                        <h4 class="text-xl font-bold text-accent mb-4">Core CS Subjects I’have  Experties</h4>
+                        <h4 class="text-xl font-bold text-accent mb-4">Core CS Subjects I'have  Experties</h4>
                         <ul class="list-disc list-inside space-y-2 text-gray-700">
                             <li><span class="font-bold">🧩 Object-Oriented Programming in Python</span></li>
                             <li><span class="font-bold">🗄 Database Management Systems</span></li>
@@ -248,17 +254,58 @@
         <section id="contact" class="py-20 md:py-32 bg-surface section-hidden">
             <div class="container mx-auto px-6">
                 <div class="text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's build something great together.</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
                     <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Have a project in mind or just want to say hi? Feel free to reach out.</p>
                 </div>
-                <div class="max-w-xl mx-auto">
-                    <form id="contact-form" class="space-y-6">
-                        <input type="text" name="name" placeholder="Your Name" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg p-3 focus:border-accent outline-none transition-colors text-gray-800" required>
-                        <input type="email" name="email" placeholder="Your Email" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg p-3 focus:border-accent outline-none transition-colors text-gray-800" required>
-                        <textarea name="message" placeholder="Your Message" rows="5" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg p-3 focus:border-accent outline-none transition-colors text-gray-800" required></textarea>
-                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
-                    </form>
-                    <div id="form-status" class="mt-4 text-center"></div>
+                <div class="max-w-2xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Email Card -->
+                        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-2 border-gray-100">
+                            <div class="flex items-center justify-center mb-4">
+                                <div class="bg-blue-100 p-4 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600 text-3xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Email</h3>
+                            <div class="text-center space-y-2">
+                                <a href="mailto:yogeshahalwat@gmail.com" class="block text-gray-600 hover:text-blue-600 transition-colors break-all text-sm">
+                                    yogeshahalwat@gmail.com
+                                </a>
+                                <a href="mailto:yogeshahalwat@zohomail.in" class="block text-gray-600 hover:text-blue-600 transition-colors break-all text-sm">
+                                    yogeshahalwat@zohomail.in
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border-2 border-gray-100">
+                            <div class="flex items-center justify-center mb-4">
+                                <div class="bg-green-100 p-4 rounded-full">
+                                    <i class="fas fa-phone-alt text-green-600 text-3xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-center mb-3 text-gray-800">Phone</h3>
+                            <a href="tel:+919871573490" class="block text-center text-gray-600 hover:text-green-600 transition-colors">
+                                +91 9871573490
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-12 text-center">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Find Me On</h3>
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://github.com/yogeshahalwat" target="_blank" class="bg-white p-4 rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                <img src="Assets/logos/github.jpg" alt="GitHub" class="w-8 h-8">
+                            </a>
+                            <a href="https://www.linkedin.com/in/yogeshkumar0/" target="_blank" class="bg-white p-4 rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                <img src="Assets/logos/linkedin.jpg" alt="LinkedIn" class="w-8 h-8">
+                            </a>
+                            <a href="https://www.blogger.com/profile/17903910830324355341" target="_blank" class="bg-white p-4 rounded-full shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1" title="Blogger">
+                                <i class="fab fa-blogger text-orange-600 text-3xl"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -267,8 +314,9 @@
     <footer class="py-8">
         <div class="container mx-auto px-6 text-center text-gray-500">
             <div class="flex justify-center space-x-6 mb-4 text-gray-600">
-                <a href="https://github.com/syedmukheeth" target="_blank" class="social-icon">GitHub</a>
-                <a href="https://www.linkedin.com/in/syedmukheeth/" target="_blank" class="social-icon">LinkedIn</a>
+                <a href="https://github.com/yogeshahalwat" target="_blank" class="social-icon hover:text-gray-800">GitHub</a>
+                <a href="https://www.linkedin.com/in/yogeshkumar0/" target="_blank" class="social-icon hover:text-gray-800">LinkedIn</a>
+                <a href="https://www.blogger.com/profile/17903910830324355341" target="_blank" class="social-icon hover:text-orange-600">Blogger</a>
             </div>
             <p>&copy; 2025 Yogesh Kumar. All Rights Reserved.</p>
         </div>
@@ -280,22 +328,64 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
             </button>
             <div class="text-center">
-                <h3 class="text-2xl font-bold mb-2">Let's Connect</h3>
-                <p class="text-gray-600 mb-6">Fill out the form below or find me on my socials.</p>
-                <form id="modal-contact-form" class="space-y-4">
-                    <input type="text" name="name" placeholder="Your Name" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg p-3 focus:border-accent outline-none transition-colors text-gray-800" required>
-                    <input type="email" name="email" placeholder="Your Email" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg p-3 focus:border-accent outline-none transition-colors text-gray-800" required>
-                    <textarea name="message" placeholder="Your Message" rows="4" class="w-full bg-gray-100 border-2 border-gray-300 rounded-lg p-3 focus:border-accent outline-none transition-colors text-gray-800" required></textarea>
-                    <button type="submit" class="btn btn-primary w-full">Send Message</button>
-                </form>
-                <div id="modal-form-status" class="mt-4 text-center"></div>
+                <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+
+                <div class="space-y-6 text-left">
+                    <!-- Email -->
+                    <div class="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg">
+                        <div class="bg-blue-100 p-3 rounded-full flex-shrink-0">
+                            <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <p class="text-sm text-gray-500 mb-2">Email</p>
+                            <a href="mailto:yogeshahalwat@gmail.com" class="block text-gray-800 hover:text-blue-600 transition-colors font-medium text-sm mb-1 break-all">
+                                yogeshahalwat@gmail.com
+                            </a>
+                            <a href="mailto:yogeshahalwat@zohomail.in" class="block text-gray-800 hover:text-blue-600 transition-colors font-medium text-sm break-all">
+                                yogeshahalwat@zohomail.in
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="flex items-center space-x-4 bg-gray-50 p-4 rounded-lg">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <i class="fas fa-phone-alt text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Phone</p>
+                            <a href="tel:+919871573490" class="text-gray-800 hover:text-green-600 transition-colors font-medium">
+                                +91 9871573490
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="pt-4">
+                        <p class="text-sm text-gray-500 mb-3">Connect on Social Media</p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://github.com/yogeshahalwat" target="_blank" class="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+                                <img src="Assets/logos/github.jpg" alt="GitHub" class="w-5 h-5">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yogeshkumar0/" target="_blank" class="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                <img src="Assets/logos/linkedin.jpg" alt="LinkedIn" class="w-5 h-5">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.blogger.com/profile/17903910830324355341" target="_blank" class="flex items-center space-x-2 bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+                                <i class="fab fa-blogger text-lg"></i>
+                                <span>Blogger</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        <!-- Contact Modal -->
 
     <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-accent text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-40">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
     </button>
 </body>
 </html>
+
